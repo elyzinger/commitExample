@@ -1,0 +1,44 @@
+.product-list-main{
+    padding: 3%;
+    background-color: plum	;
+    position: relative;
+    border-radius: 3%;
+    box-shadow: 2px 2px 2px black;
+    width: auto;
+    height: auto;
+    justify-content:center ;
+    margin-bottom: 20px;
+    align-content: center;
+    /* align-items: center; */
+    justify-items: center;
+    
+}
+.delete-list-btn{
+    opacity: 0.8;
+    height:38px;
+    width: 110px;
+    position: absolute;
+    right: 3% ;
+    bottom: 1%;
+    background-color: darkred;
+    
+}
+.product-list{
+    padding-bottom: 10px;
+    position: relative;
+}
+.items-count{
+    padding-left:10px;
+    font-weight: bold;
+}
+.delete-list-btn:hover{
+    opacity: 1;
+    /* background-color: skyblue; */
+    /* color: chartreuse; */
+    border-radius: 3%;
+    box-shadow: 1px 1px 1px blue;
+    text-shadow: 1px 1px 1px black;
+}
+.delete-list-btn:focus{
+outline: none;
+}

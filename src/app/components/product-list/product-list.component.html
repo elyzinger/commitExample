@@ -1,0 +1,17 @@
+
+<div class="card  product-list-main">
+    <h1 style="padding-bottom: 20px; text-align: center;">רשימת מוצרים</h1>
+     <div *ngIf ="productsList.length === 0" class="alert alert-info" style="font-weight: bold; text-align: center ; font-size: large;">אין מוצרים</div> 
+  
+  <ul class="list-group product-list" *ngFor="let product of productsList">
+    
+        <app-product-item [productItem] = "product" ></app-product-item>
+      
+    </ul>
+    <label>Items Count :   <label class="items-count">{{productsList.length}}</label></label>
+    
+    <button type="button " (click)="deleteList() " class="btn btn-primary delete-list-btn" data-toggle="button" aria-pressed="false">
+      מחק רשימה
+    </button>
+  
+  </div>
